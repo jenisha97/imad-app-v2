@@ -8,13 +8,13 @@ app.use(morgan('combined'));
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-app.get('/article 1', function (req, res) {
+app.get('/article-one', function (req, res) {
   res.send('Article 1 requested');
 });
-app.get('/article 2', function (req, res) {
+app.get('/article-two', function (req, res) {
   res.send('Article 2 requested');
 });
-app.get('/article 3', function (req, res) {
+app.get('/article-three', function (req, res) {
   res.send('Article 3 requested');
 });
 
