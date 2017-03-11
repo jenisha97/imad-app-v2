@@ -8,7 +8,7 @@ var Pool = require('pg').Pool;
      host:'db.imad.hasura-app.io',
      port:'5432',
      password:process.env.DB_PASSWORD
- }
+ };
 
 var app = express();
 app.use(morgan('combined'));
@@ -27,7 +27,7 @@ app.get('/test-db',function(req,res){
             res.send(JSON.stringyfy(result));
         }
     });
-})
+});
 app.get('/article-one', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
 });
